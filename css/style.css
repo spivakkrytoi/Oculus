@@ -1,0 +1,297 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Press+Start+2P&display=swap");
+
+:root {
+  --grey: #5c5c5e;
+  --white: #f6f4f5;
+  --light-grey: #cacad6;
+  --black: #070707;
+  --font-family: "Helvetica", sans-serif;
+  --second-family: "Inter", sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+header nav {
+  display: flex;
+  margin: 19px;
+  justify-content: space-between; /* Елементи на протилежних кінцях */
+  align-items: center; /* Вирівнювання по вертикалі */
+}
+button {
+  cursor: pointer;
+}
+
+.btns {
+  display: flex; /* Розміщує кнопки в рядок */
+  gap: 20px; /* Проміжок між кнопками */
+  button {
+    background-color: transparent;
+    border: none;
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 16px;
+    color: var(--grey);
+  }
+}
+
+.logo {
+  margin: 0 auto; /* Логотип буде по центру через автоматичні відступи */
+}
+
+.bag {
+  margin-left: auto; /* "Bag" зсувається до кінця */
+  cursor: pointer;
+}
+.Meta_quest_2 h1 {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 96px;
+  color: var(--grey);
+  margin-bottom: 10px;
+}
+.bg {
+  background-image: url(../png/First_background.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 1000px;
+  box-sizing: border-box;
+  object-fit: cover;
+  display: flex;
+  justify-content: center;
+}
+.Meta_quest_2 h3 {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 36px;
+  color: var(--grey);
+  margin-bottom: 5px;
+}
+.Meta_quest_2 p {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 13px;
+  color: var(--grey);
+}
+.Meta_quest_2 .buy {
+  gap: 0;
+  border: none;
+  text-align: center;
+  width: 300px;
+  height: 60px;
+  font-family: var(--font-family);
+  font-weight: 700;
+  font-size: 16px;
+  color: var(--white);
+  background: linear-gradient(180deg, #bc10d8 0%, rgba(80, 0, 250, 0.93) 100%);
+}
+.Meta_quest_2 .price {
+  gap: 0;
+  width: 300px;
+  height: 60px;
+  margin: 0;
+  background: rgba(217, 217, 217, 0);
+  border: 1px solid transparent; /* Прозорий бордер */
+  border-image: linear-gradient(
+    180deg,
+    #bc10d8 0%,
+    rgba(80, 0, 250, 0.93) 100%
+  ); /* Градієнт для бордера */
+  border-image-slice: 1; /* Вказує, щоб градієнт поширювався на весь бордер */
+}
+.container {
+  width: 1200px;
+  margin: 0 auto;
+}
+.product_features {
+  margin-top: 100px;
+  height: 402px;
+  display: flex;
+}
+.list {
+  width: 185px;
+  height: 208px;
+  list-style: none;
+  margin-right: 110px;
+  font-family: var(--font-family);
+  font-weight: 700;
+  font-size: 16px;
+  color: var(--grey);
+}
+li {
+  margin-top: 20px;
+}
+.Product_feat h3 {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 16px;
+  color: var(--grey);
+}
+.product_feat_2 {
+  margin-left: 40px;
+}
+.product_feat_1 h2 {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 36px;
+  text-transform: uppercase;
+  background: linear-gradient(180deg, #bc10d8 0%, rgba(80, 0, 250, 0.93) 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  width: 329px;
+}
+.product_feat_graphics {
+  font-family: var(--font-family);
+  font-weight: 700;
+  font-size: 16px;
+  color: var(--black);
+}
+.product_feat_2 p {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 16px;
+  color: var(--grey);
+}
+.product_feat_2 h2 {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 24px;
+  color: var(--grey);
+}
+.Games {
+  margin-top: 100px;
+  display: flex;
+  width: 1200px;
+  height: 568px;
+}
+.games_text {
+  width: 300px;
+}
+.games_colorful_text {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 36px;
+  text-transform: uppercase;
+  background: linear-gradient(180deg, #bc10d8 0%, rgba(80, 0, 250, 0.93) 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.Games p {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 16px;
+  color: var(--grey);
+}
+.Games button {
+  gap: 0;
+  width: 300px;
+  height: 60px;
+  margin: 0;
+  background: rgba(217, 217, 217, 0);
+  border: 1px solid transparent; /* Прозорий бордер */
+  border-image: linear-gradient(
+    180deg,
+    #bc10d8 0%,
+    rgba(80, 0, 250, 0.93) 100%
+  ); /* Градієнт для бордера */
+  border-image-slice: 1; /* Вказує, щоб градієнт поширювався на весь бордер */
+}
+.Games button:hover {
+  gap: 0;
+  width: 300px;
+  height: 60px;
+  margin: 0;
+  background: rgba(217, 217, 217, 0);
+  border: 1px solid transparent; /* Прозорий бордер */
+  border-image: linear-gradient(
+    180deg,
+    #bc10d8 0%,
+    rgba(80, 0, 250, 0.93) 100%
+  ); /* Градієнт для бордера */
+  border-image-slice: 1;
+}
+.Games span {
+  font-family: var(--font-family);
+  font-weight: 700;
+  font-size: 16px;
+  background: linear-gradient(180deg, #bc10d8 0%, rgba(80, 0, 250, 0.93) 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.Games_el {
+  width: 900px;
+  display: flex;
+  margin-left: 18px;
+}
+.games_border {
+  width: 300px;
+  height: 500px;
+  gap: 0;
+  margin: 0;
+  background: rgba(217, 217, 217, 0);
+  border: 1px solid transparent; /* Прозорий бордер */
+  border-image: linear-gradient(
+    180deg,
+    #bc10d8 0%,
+    rgba(80, 0, 250, 0.93) 100%
+  ); /* Градієнт для бордера */
+  border-image-slice: 1; /* Вказує, щоб градієнт поширювався на весь бордер */
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.Games_el h2 {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 24px;
+  color: var(--black);
+}
+.Games_el p {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 16px;
+  color: var(--grey);
+  width: 260px;
+}
+.Games_el a {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 16px;
+  background: linear-gradient(180deg, #bc10d8 0%, rgba(80, 0, 250, 0.93) 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-decoration: none;
+  margin-top: 40px;
+}
+.Games_el img {
+  width: 260px;
+  height: 280px;
+}
+.oculus_bg{
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  margin: 0 auto;
+  height: 300px;
+  width: 90%;
+  background-image: url(../png/Oulus_bg.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.oculus_vr{
+  position: absolute;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.Oculus_view{
+}
