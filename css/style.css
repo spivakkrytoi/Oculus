@@ -76,7 +76,6 @@ button {
   color: var(--grey);
 }
 .Meta_quest_2 .buy {
-  gap: 0;
   border: none;
   text-align: center;
   width: 300px;
@@ -88,7 +87,10 @@ button {
   background: linear-gradient(180deg, #bc10d8 0%, rgba(80, 0, 250, 0.93) 100%);
 }
 .Meta_quest_2 .price {
-  gap: 0;
+  font-family: var(--font-family);
+  font-weight: 700;
+  font-size: 16px;
+  color: var(--grey);
   width: 300px;
   height: 60px;
   margin: 0;
@@ -200,20 +202,6 @@ li {
   ); /* Градієнт для бордера */
   border-image-slice: 1; /* Вказує, щоб градієнт поширювався на весь бордер */
 }
-.Games button:hover {
-  gap: 0;
-  width: 300px;
-  height: 60px;
-  margin: 0;
-  background: rgba(217, 217, 217, 0);
-  border: 1px solid transparent; /* Прозорий бордер */
-  border-image: linear-gradient(
-    180deg,
-    #bc10d8 0%,
-    rgba(80, 0, 250, 0.93) 100%
-  ); /* Градієнт для бордера */
-  border-image-slice: 1;
-}
 .Games span {
   font-family: var(--font-family);
   font-weight: 700;
@@ -274,24 +262,302 @@ li {
   width: 260px;
   height: 280px;
 }
-.oculus_bg{
-  display: flex;
-  justify-content: center;
-  align-self: center;
+.oculus_bg {
   margin: 0 auto;
   height: 300px;
   width: 90%;
   background-image: url(../png/Oulus_bg.png);
   background-repeat: no-repeat;
   background-position: center;
-  background-size: cover;
+  background-size: contain;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative; /* Змінено для абсолютного позиціонування дочірніх елементів */
 }
-.oculus_vr{
+
+.oculus_elements {
   position: absolute;
   z-index: 1000;
   display: flex;
-  align-items: center;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
-.Oculus_view{
+.Oculus_view {
+  margin: 0 auto;
+  text-align: center; /* Якщо текст потрібно центровано вирівняти */
 }
+
+.oculus_btns {
+  flex-direction: row; /* Встановлюємо кнопки в рядок */
+}
+.oculus_btns button:first-child {
+  border: none;
+  text-align: center;
+  width: 300px;
+  height: 60px;
+  font-family: var(--font-family);
+  font-weight: 700;
+  font-size: 16px;
+  color: var(--white);
+  background: linear-gradient(180deg, #bc10d8 0%, rgba(80, 0, 250, 0.93) 100%);
+}
+.oculus_btns button:last-child {
+  width: 300px;
+  height: 60px;
+  margin: 0;
+  background: rgba(217, 217, 217, 0);
+  border: 1px solid transparent; /* Прозорий бордер */
+  border-image: linear-gradient(
+    180deg,
+    #bc10d8 0%,
+    rgba(80, 0, 250, 0.93) 100%
+  ); /* Градієнт для бордера */
+  border-image-slice: 1; /* Вказує, щоб градієнт поширювався на весь бордер */
+}
+.oculus_elements p {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 13px;
+  color: var(--grey);
+}
+.in_the_box {
+  display: flex;
+  margin-top: 109px;
+}
+.in_the_box_other_items {
+  display: flex;
+  box-sizing: border-box;
+  flex-wrap: wrap;
+  margin-top: 50px;
+}
+.in_the_box_vr {
+  margin-right: 20px;
+}
+.in_the_box_cable_card {
+  h2 {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 36px;
+    text-transform: uppercase;
+    background: linear-gradient(
+      180deg,
+      #bc10d8 0%,
+      rgba(80, 0, 250, 0.93) 100%
+    );
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-left: 41px;
+    margin-top: 0;
+  }
+  width: 280px;
+  height: 82px;
+}
+.in_the_box_controllers_card:nth-child(4) {
+  margin-left: 40px;
+}
+.in_the_box p {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 16px;
+  color: var(--grey);
+}
+.metaverse {
+  background-image: url(../png/Metaverse.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 1200px;
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  margin-top: 100px;
+}
+.metaverse button {
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+  border-style: none;
+  background: linear-gradient(180deg, #bc10d8 0%, rgba(80, 0, 250, 0.93) 100%);
+  font-family: var(--font-family);
+  font-weight: 700;
+  font-size: 16px;
+  color: #fff;
+  justify-content: center;
+  margin-top: 371px;
+}
+.accessories {
+  display: flex;
+  height: 540px;
+  align-items: flex-end;
+  justify-content: center;
+  position: absolute;
+}
+.accessories button {
+  gap: 0;
+  width: 260px;
+  height: 30px;
+  margin: 0;
+  background: rgba(217, 217, 217, 0);
+  border: 1px solid transparent; /* Прозорий бордер */
+  border-image: linear-gradient(
+    180deg,
+    #bc10d8 0%,
+    rgba(80, 0, 250, 0.93) 100%
+  ); /* Градієнт для бордера */
+  border-image-slice: 1; /* Вказує, щоб градієнт поширювався на весь бордер */
+}
+.accessories span {
+  font-family: var(--font-family);
+  font-weight: 700;
+  font-size: 16px;
+  background: linear-gradient(180deg, #bc10d8 0%, rgba(80, 0, 250, 0.93) 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.accessories_border {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  height: 100%;
+  background: rgba(217, 217, 217, 0);
+  border: 1px solid transparent; /* Прозорий бордер */
+  border-image: linear-gradient(
+    180deg,
+    #bc10d8 0%,
+    rgba(80, 0, 250, 0.93) 100%
+  ); /* Градієнт для бордера */
+  border-image-slice: 1; /* Вказує, щоб градієнт поширювався на весь бордер */
+}
+.first_accesories,
+.second_accesories,
+.third_accesories,
+.fourth_accesories {
+  margin-left: 20px;
+  margin-bottom: 18px;
+}
+.accessories p {
+  width: 300px;
+  display: flex;
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 16px;
+  color: var(--grey);
+}
+.accessories_price {
+  font-family: var(--font-family);
+  font-weight: 700;
+  font-size: 16px;
+  color: var(--black);
+}
+.accessories_colorful_text {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 36px;
+  text-transform: uppercase;
+  background: linear-gradient(180deg, #bc10d8 0%, rgba(80, 0, 250, 0.93) 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.accessories h2 {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 24px;
+  color: var(--black);
+  height: 56px;
+  width: 260px;
+}
+.accessories_text {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 16px;
+  color: var(--grey);
+  margin-top: 100px;
+}
+.footer-nav-bar {
+  display: flex;
+  margin: 19px;
+  justify-content: space-between; /* Елементи на протилежних кінцях */
+  align-items: center; /* Вирівнювання по вертикалі */
+}
+.footer-nav-bar button {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 16px;
+  color: var(--grey);
+  background-color: transparent;
+  border: none;
+  text-transform: uppercase;
+}
+
+.footer_btns {
+  display: flex; /* Розміщує кнопки в рядок */
+  gap: 20px; /* Проміжок між кнопками */
+  width: 384px;
+  height: 18px;
+  button {
+    background-color: transparent;
+    border: none;
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 16px;
+    color: var(--grey);
+  }
+}
+
+.logo {
+  margin: 0 auto; /* Логотип буде по центру через автоматичні відступи */
+}
+
+.bag {
+  margin-left: auto; /* "Bag" зсувається до кінця */
+  cursor: pointer;
+}
+.footer_nav_bar_socials {
+  display: flex;
+  gap: 20px;
+  width: 130px;
+  height: 30px;
+  cursor: pointer;
+}
+.news_and_updates{
+  width: 100%;
+}
+.news_and_updates h2 {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 24px;
+  color: var(--black);
+}
+.news_and_updates input {
+  width: 600px;
+  height: 55px;
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 13px;
+  color: var(--light-grey);
+}
+.news_and_updates p {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 13px;
+  color: var(--grey);
+  width: 600px;
+}
+.oculus_email{
+  display: flex;
+  justify-content: flex-end;
+}
+footer{
+  display: flex;
+  align-items: flex-end;
+  margin-top: 600px;
+}
+
