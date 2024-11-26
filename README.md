@@ -25,4 +25,4 @@
    git clone https://github.com/spivakkrytoi/Oculus.git
 
 ## Надіюсь вам сподобався сайт
-![Coding GIF](https://giphy.com/gifs/heart-snoopy-sweetragers-7vDoUoDZHoUQxMPkd7)
+<iframe src="https://giphy.com/embed/7vDoUoDZHoUQxMPkd7" width="480" height="480" style="" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/heart-snoopy-sweetragers-7vDoUoDZHoUQxMPkd7">via GIPHY</a></p>
