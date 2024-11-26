@@ -111,6 +111,7 @@ button {
   margin-top: 100px;
   height: 402px;
   display: flex;
+  justify-content: space-around;
 }
 .list {
   width: 185px;
@@ -131,8 +132,12 @@ li {
   font-size: 16px;
   color: var(--grey);
 }
-.product_feat_2 {
-  margin-left: 40px;
+.product_feat_2{
+  margin-left: 25px;
+}
+.Product_feat{
+  width: 200px;
+  margin-right: 115px;
 }
 .product_feat_1 h2 {
   font-family: var(--font-family);
@@ -573,17 +578,14 @@ footer {
 .snowflake {
   position: absolute;
   top: -10px;
-  background-color: #0400e3;
-  border-radius: 50%;
-  opacity: 0.8;
-  animation: fall 10s linear infinite;
+  color: rgb(183, 188, 239);
+  font-size: 1em;
+  user-select: none;
+  pointer-events: none;
 }
 
 @keyframes fall {
-  0% {
-    transform: translateY(-10px);
-  }
-  100% {
-    transform: translateY(100vh);
+  to {
+    transform: translateY(calc(750vh + 10px)) rotate(360deg);
   }
 }
