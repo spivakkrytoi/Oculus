@@ -15,7 +15,7 @@
 ---
 
 ## 🎥 Демонстрація
-![Coding GIF](https://media.giphy.com/media/13HgwGsXF0aiGY/giphy.gif)
+![Coding GIF](https://giphy.com/embed/3oKIPnAiaMCws8nOsE)
 
 ---
 
@@ -25,8 +25,6 @@
    git clone https://github.com/spivakkrytoi/Oculus.git
 
 
-![Coding GIF](https://media.giphy.com/media/7vDoUoDZHoUQxMPkd7/giphy.gif)
-
----
-
 **Надіюсь, вам сподобався сайт! 😊**
+
+![Coding GIF](https://media.giphy.com/media/7vDoUoDZHoUQxMPkd7/giphy.gif)
