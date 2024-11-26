@@ -15,7 +15,7 @@
 ---
 
 ## 🎥 Демонстрація
-![Coding GIF](https://giphy.com/embed/3oKIPnAiaMCws8nOsE)
+![Coding GIF](https://media.giphy.com/media/3oKIPnAiaMCws8nOsE/giphy.gif)
 
 ---
 
