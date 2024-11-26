@@ -434,6 +434,7 @@ li {
     rgba(80, 0, 250, 0.93) 100%
   ); /* Градієнт для бордера */
   border-image-slice: 1; /* Вказує, щоб градієнт поширювався на весь бордер */
+  width: 300px;
 }
 .first_accesories,
 .second_accesories,
