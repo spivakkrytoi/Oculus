@@ -15,8 +15,7 @@
 ---
 
 ## 🎥 Демонстрація
-Ось як виглядає процес створення сайту:  
-![Coding GIF](https://media.giphy.com/media/26tn33aiTi1jkl6H6/giphy.gif)
+![Coding GIF](https://media.giphy.com/media/13HgwGsXF0aiGY/giphy.gif)
 
 ---
 
@@ -24,3 +23,6 @@
 1. Клонувати репозиторій:
    ```bash
    git clone https://github.com/spivakkrytoi/Oculus.git
+
+## Надіюсь вам сподобався сайт
+![Coding GIF](https://giphy.com/gifs/heart-snoopy-sweetragers-7vDoUoDZHoUQxMPkd7)
