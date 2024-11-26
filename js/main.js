@@ -17,29 +17,23 @@ instagram_social.addEventListener("click", function () {
 });
 
 //Ну а тепер будуть прікольні сніжинки в честь нового року)))
-document.addEventListener("DOMContentLoaded", function () {
-  const snowflakesContainer = document.querySelector(".snowflakes");
+// Функція створення сніжинки
+function createSnowflake() {
+  const snowflake = document.createElement("div");
+  snowflake.classList.add("snowflake");
+  snowflake.textContent = "❄"; // Символ сніжинки
+  snowflake.style.left = Math.random() * window.innerWidth + "px";
+  snowflake.style.fontSize = Math.random() * 5 + 15 + "px"; // Випадковий розмір
+  snowflake.style.animation = `fall ${Math.random() * 5 + 3}s linear`;
+  snowflake.style.animationDuration = `${Math.random() * 5 + 10}s`; // Тривалість падіння
 
-  // Функція для створення сніжинок
-  function createSnowflake() {
-    const snowflake = document.createElement("div");
-    snowflake.classList.add("snowflake");
+  document.body.appendChild(snowflake);
 
-    // Встановлюємо випадкові розміри, місце і швидкість
-    snowflake.style.width = Math.random() * 10 + "px";
-    snowflake.style.height = snowflake.style.width;
-    snowflake.style.left = Math.random() * 100 + "vw";
-    snowflake.style.animationDuration = Math.random() * 5 + 5 + "s"; // випадкова швидкість падіння
-    snowflake.style.animationDelay = Math.random() * 5 + "s"; // затримка для кожної сніжинки
+  // Видалення сніжинки через 10 секунд
+  setTimeout(() => {
+    snowflake.remove();
+  }, 10000);
+}
 
-    snowflakesContainer.appendChild(snowflake);
-
-    // При досягненні нижнього краю, видаляємо сніжинку
-    snowflake.addEventListener("animationiteration", function () {
-      snowflake.remove();
-    });
-  }
-
-  // Створюємо нову сніжинку кожну секунду
-  setInterval(createSnowflake, 200);
-});
+// Запускаємо сніжинки кожні 200 мс
+setInterval(createSnowflake, 200);
