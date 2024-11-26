@@ -24,5 +24,9 @@
    ```bash
    git clone https://github.com/spivakkrytoi/Oculus.git
 
-## Надіюсь вам сподобався сайт
-![Coding GIF](https://giphy.com/embed/7vDoUoDZHoUQxMPkd7)
+
+![Coding GIF](https://media.giphy.com/media/7vDoUoDZHoUQxMPkd7/giphy.gif)
+
+---
+
+**Надіюсь, вам сподобався сайт! 😊**
