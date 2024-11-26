@@ -283,7 +283,7 @@ li {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  top: 50%;
+  top: 60%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
@@ -527,7 +527,7 @@ li {
   height: 30px;
   cursor: pointer;
 }
-.news_and_updates{
+.news_and_updates {
   width: 100%;
 }
 .news_and_updates h2 {
@@ -551,13 +551,38 @@ li {
   color: var(--grey);
   width: 600px;
 }
-.oculus_email{
+.oculus_email {
   display: flex;
   justify-content: flex-end;
 }
-footer{
+footer {
   display: flex;
   align-items: flex-end;
   margin-top: 600px;
 }
+.snowflakes {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
 
+.snowflake {
+  position: absolute;
+  top: -10px;
+  background-color: #0400e3;
+  border-radius: 50%;
+  opacity: 0.8;
+  animation: fall 10s linear infinite;
+}
+
+@keyframes fall {
+  0% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(100vh);
+  }
+}
