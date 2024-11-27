@@ -19,6 +19,7 @@ header nav {
   justify-content: space-between; /* Елементи на протилежних кінцях */
   align-items: center; /* Вирівнювання по вертикалі */
 }
+
 button {
   cursor: pointer;
 }
@@ -51,6 +52,22 @@ button {
   color: var(--grey);
   margin-bottom: 10px;
 }
+.Meta_quest_2 {
+  animation: Meta_quest_2_animation 1s ease-in-out;
+}
+@keyframes Meta_quest_2_animation {
+  from {
+    transform: translateY(
+      100%
+    ); /* Початково текст знаходиться нижче свого положення */
+    opacity: 0; /* Невидимий */
+  }
+  to {
+    transform: translateY(0); /* Повертається в нормальне положення */
+    opacity: 1; /* Стає видимим */
+  }
+}
+
 .bg {
   background-image: url(../png/First_background.png);
   background-repeat: no-repeat;
@@ -132,10 +149,10 @@ li {
   font-size: 16px;
   color: var(--grey);
 }
-.product_feat_2{
+.product_feat_2 {
   margin-left: 25px;
 }
-.Product_feat{
+.Product_feat {
   width: 200px;
   margin-right: 115px;
 }
