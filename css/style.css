@@ -350,6 +350,7 @@ li {
 .in_the_box {
   display: flex;
   margin-top: 109px;
+  gap: 20px;
 }
 .in_the_box_other_items {
   display: flex;
