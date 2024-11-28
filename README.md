@@ -23,6 +23,9 @@
 1. Клонувати репозиторій:
    ```bash
    git clone https://github.com/spivakkrytoi/Oculus.git
+2. Або перейти по посиланню 
+   ```bash
+   https://spivakkrytoi.github.io/Oculus/
 
 
 **Надіюсь, вам сподобався сайт! 😊**
