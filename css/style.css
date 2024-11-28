@@ -509,6 +509,7 @@ li {
 .footer-nav-bar {
   display: flex;
   margin: 19px;
+  height: 100px;
   justify-content: space-between; /* Елементи на протилежних кінцях */
   align-items: center; /* Вирівнювання по вертикалі */
 }
@@ -527,6 +528,7 @@ li {
   gap: 20px; /* Проміжок між кнопками */
   width: 384px;
   height: 18px;
+  margin-left: 360px;
   button {
     background-color: transparent;
     border: none;
@@ -551,9 +553,11 @@ li {
   width: 130px;
   height: 30px;
   cursor: pointer;
+  margin-right: 360px;
 }
 .news_and_updates {
   width: 100%;
+  margin-top: 672px;
 }
 .news_and_updates h2 {
   font-family: var(--font-family);
@@ -605,6 +609,11 @@ li {
   -webkit-box-shadow: none;
   -moz-box-shadow: none;
   box-shadow: none;
+  border-bottom: 1px solid var(--light-grey);
+  margin-bottom: 35px;
+}
+.email_input::placeholder{
+  color: var(--light-grey);
 }
 .email_input:focus {
   outline: none;
@@ -614,10 +623,10 @@ li {
   margin-top: 80px;
 }
 footer {
-  display: flex;
-  align-items: flex-end;
-  margin-top: 600px;
   border-style: var(--light-grey);
+  border-top: 1px solid var(--light-grey);
+  border-bottom: 1px solid var(--light-grey);
+  margin-bottom: 10px;
 }
 .snowflakes {
   position: absolute;
