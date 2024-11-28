@@ -577,11 +577,36 @@ li {
 .oculus_email {
   display: flex;
   justify-content: flex-end;
+  align-items: center;
+  margin-left: 500px;
+}
+.email_button {
+  width: 50px;
+  height: 50px;
+  border-radius: 100px;
+  border-style: none;
+  position: absolute;
+  font-family: "Helvetica", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  color: #5c5c5e;
+  background-color: #cacad6;
+  text-transform: uppercase;
+  margin-left: 550px;
+  margin-top: 5px;
+}
+.email_input{
+  position: absolute;
+}
+
+.footer_text{
+  margin-top: 80px;
 }
 footer {
   display: flex;
   align-items: flex-end;
   margin-top: 600px;
+  border-style: var(--light-grey);
 }
 .snowflakes {
   position: absolute;
