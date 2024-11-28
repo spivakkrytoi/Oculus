@@ -1,6 +1,6 @@
 # Oculus Website 🌐
 
-**Oculus** — це сайт про VR шлем Oculus meta quest 2
+**Oculus** — це сайт-реклама про VR шолом Oculus meta quest 2. На сайті є презентація, ціна та інформація про нього
 
 ---
 
