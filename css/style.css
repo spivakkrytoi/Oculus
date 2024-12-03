@@ -547,7 +547,7 @@ li {
 }
 
 .bag {
-  margin-left: auto; /* "Bag" зсувається до кінця */
+  margin-left: auto;
   cursor: pointer;
 }
 .footer_nav_bar_socials {
