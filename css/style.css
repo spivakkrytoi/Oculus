@@ -135,6 +135,7 @@ button {
   width: 185px;
   height: 208px;
   list-style: none;
+  padding: 0;
   margin-right: 110px;
   font-family: var(--font-family);
   font-weight: 700;
