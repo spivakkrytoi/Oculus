@@ -505,7 +505,6 @@ li {
 }
 .footer-nav-bar {
   display: flex;
-  margin: 19px;
   height: 100px;
   justify-content: space-between; /* Елементи на протилежних кінцях */
   align-items: center; /* Вирівнювання по вертикалі */
