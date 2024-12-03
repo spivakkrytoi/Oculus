@@ -523,9 +523,7 @@ li {
 .footer_btns {
   display: flex; /* Розміщує кнопки в рядок */
   gap: 20px; /* Проміжок між кнопками */
-  width: 384px;
   height: 18px;
-  margin-left: 360px;
   button {
     background-color: transparent;
     border: none;
@@ -550,7 +548,6 @@ li {
   width: 130px;
   height: 30px;
   cursor: pointer;
-  margin-right: 360px;
 }
 .news_and_updates {
   width: 100%;
