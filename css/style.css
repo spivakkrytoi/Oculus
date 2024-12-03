@@ -554,7 +554,7 @@ li {
 .news_and_updates {
   width: 100%;
   margin-top: 672px;
-  border-right: 1px solid var(--grey);
+  border-right: 1px solid var(--light-grey);
   margin-bottom: 100px;
 }
 .news_and_updates h2 {
