@@ -359,9 +359,6 @@ li {
   flex-wrap: wrap;
   margin-top: 50px;
 }
-.in_the_box_vr {
-  margin-right: 20px;
-}
 .in_the_box_cable_card {
   h2 {
     font-family: var(--font-family);
