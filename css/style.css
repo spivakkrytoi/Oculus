@@ -554,6 +554,8 @@ li {
 .news_and_updates {
   width: 100%;
   margin-top: 672px;
+  border-right: 1px solid var(--grey);
+  margin-bottom: 100px;
 }
 .news_and_updates h2 {
   font-family: var(--font-family);
@@ -573,13 +575,11 @@ li {
   font-weight: 400;
   font-size: 13px;
   color: var(--grey);
-  width: 600px;
 }
 .oculus_email {
   display: flex;
   justify-content: flex-end;
-  align-items: center;
-  margin-left: 500px;
+  margin-right: 18px;
 }
 .email_button {
   width: 50px;
@@ -615,7 +615,12 @@ li {
 }
 
 .footer_text {
-  margin-top: 80px;
+  margin-top: 90px;
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 13px;
+  color: var(--grey);
+  width: 600px;
 }
 footer {
   border-style: var(--light-grey);
