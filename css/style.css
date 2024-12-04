@@ -147,6 +147,13 @@ button {
 li {
   margin-top: 20px;
 }
+li:hover{
+  font-family: var(--font-family);
+  font-weight: 700;
+  font-size: 16px;
+  color: var(--black);
+  cursor: pointer;
+}
 .Product_feat h3 {
   font-family: var(--font-family);
   font-weight: 400;
@@ -170,12 +177,6 @@ li {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   width: 329px;
-}
-.product_feat_graphics {
-  font-family: var(--font-family);
-  font-weight: 700;
-  font-size: 16px;
-  color: var(--black);
 }
 .product_feat_2 p {
   font-family: var(--font-family);
