@@ -147,7 +147,7 @@ button {
 li {
   margin-top: 20px;
 }
-li:hover{
+li:hover {
   font-family: var(--font-family);
   font-weight: 700;
   font-size: 16px;
@@ -614,7 +614,7 @@ li:hover{
   border-bottom: 1px solid var(--light-grey);
   margin-bottom: 35px;
 }
-.email_input::placeholder{
+.email_input::placeholder {
   color: var(--light-grey);
 }
 .email_input:focus {
@@ -634,6 +634,14 @@ footer {
   border-top: 1px solid var(--light-grey);
   border-bottom: 1px solid var(--light-grey);
   margin-bottom: 10px;
+}
+footer a {
+  font-family: "Helvetica", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  color: #5c5c5e;
+  text-transform: uppercase;
+  text-decoration: none;
 }
 .snowflakes {
   position: absolute;
